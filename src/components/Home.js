@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
-import top from '../assets/top.png';
 import p_1 from '../assets/p-1.png';
 import p_2 from '../assets/p-2.png';
 import bot from '../assets/bot.png';
@@ -15,7 +14,6 @@ import scroll from '../assets/scroll.png';
 import hand from '../assets/hand.png';
 import side_1 from '../assets/side-1.png';
 import side from '../assets/side.png';
-import circle_top from '../assets/circle-top.png';
 import doge from '../assets/doge.png';
 import Typed from "react-typed"
 import Slider from './Slider';
@@ -24,6 +22,19 @@ import Slider from './Slider';
 
 export default function Home() {
 
+    const [copySuccess, setCopySuccess] = useState('');
+
+    // your function to copy here
+
+    const copyToClipBoard = async copyMe => {
+        try {
+            await navigator.clipboard.writeText(copyMe);
+            setCopySuccess('Copied!');
+        } catch (err) {
+            setCopySuccess('Failed to copy!');
+        }
+    };
+
     return (
         <div className="bg-blue-50 text-white-100">
 
@@ -31,18 +42,14 @@ export default function Home() {
 
             <div className="bg-blue">
 
-                <div className="circle absolute top-5 w-1/2 left-48 lg:block hidden">
-                    <img src={circle_top} alt="" className='' />
-                </div>
-
-                <div className="lg:px-20 px-5 container mx-auto md:block hidden">
+                <div className="lg:px-8 md:px-5 container mx-auto md:block hidden">
                     <Menu />
-                    <div className="lg:flex block justify-between gap-12 items-center py-12">
-                        <div className="text-white-100 w-1/2">
+                    <div className="lg:flex block justify-between gap-12 items-center pt-28">
+                        <div className="text-white-100 lg:w-1/2 w-full">
                             <h2 className='md:text-6xl text-3xl font-coolvetica font-bold text-black-100'>
                                 <Typed
                                     strings={[
-                                        'Free to use, cross splatform artificial intelligence that is here to stay'
+                                        'Ai Doge free to use, cross platform artificial intelligence that is here to stay'
                                     ]}
                                     typeSpeed={50}
                                     cursorChar={''}
@@ -51,9 +58,7 @@ export default function Home() {
                             </h2>
                         </div>
 
-                        <div className="w-1/2">
-                            <img src={doge} alt="Logo" className="lg:float-right lg:mt-0 mt-8" />
-                        </div>
+                        <img src={doge} alt="" className='doge lg:w-1/3 w-full -mt-6' />
 
                     </div>
 
@@ -68,9 +73,9 @@ export default function Home() {
                 <div className="md:hidden block">
                     <Menu />
 
-                    <div className="text-white-100 flex flex-col items-center py-20">
+                    <div className="text-white-100 flex flex-col items-center lg:py-20 py-8">
 
-                        <h2 className='text-5xl font-coolvetica font-bold px-5'>
+                        <h2 className='lg:text-5xl text-3xl font-coolvetica font-bold px-5'>
                             Free to use, cross
 
                             platform artificial
@@ -141,7 +146,7 @@ export default function Home() {
                 <div className="lg:py-12 py-5 lg:px-20 px-5 container mx-auto text-white-100 ">
                     <div className="lg:flex items-center justify-between">
 
-                        <div className="lg:w-5/12 w-full">
+                        <div className="lg:w-5/12 w-full lg:pb-0 pb-12">
                             <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
                                 <Typed
                                     strings={[
@@ -196,7 +201,7 @@ export default function Home() {
 
             <div id='about' className="">
 
-                <div className="flex lg:mb-12 items-center gap-32">
+                <div className="flex my-12 items-center gap-32">
                     <img src={hand} alt="" className='lg:block hidden' />
 
                     <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
@@ -306,7 +311,7 @@ export default function Home() {
                         <p className="py-5 font-inter">
                             <Typed
                                 strings={[
-                                    'It will cost you to upgrade the bot, develop the bot or promote on our bot, all paid in $AIDoge token. 50% of tokens paid from buyers will be airdropped to all holders, the remaining 50% we will use for future development. However, it is not ruled out that we will burn it.'
+                                    'It will cost you to upgrade the bot, develop the bot or promote on our bot, all paid in $DogeGPT token. 50% of tokens paid from buyers will be airdropped to all holders, the remaining 50% we will use for future development. However, it is not ruled out that we will burn it.'
                                 ]}
                                 typeSpeed={40}
                                 cursorChar={''}
@@ -317,7 +322,7 @@ export default function Home() {
 
                     <div className="lg:flex gap-6 my-8">
 
-                        <div className='bg_1 p-5 font-inter flex flex-col items-center justify-center mt-20'>
+                        <div className='bg_1 p-5 font-inter flex flex-col items-center justify-center'>
                             <h3 className='lg:text-3xl text-2xl font-semibold text-center'>Private
                                 Package</h3>
 
@@ -332,7 +337,7 @@ export default function Home() {
                                     Billed yearly
                                 </li>
                                 <li>
-                                    Pay with $AlDoge
+                                    Pay with $DogeGPT
                                 </li>
                             </ul>
 
@@ -341,7 +346,7 @@ export default function Home() {
                             </button>
                         </div>
 
-                        <div className='bg_2 p-5 font-inter flex flex-col items-center justify-center lg:mt-0 mt-8'>
+                        <div className='bg_2 p-5 font-inter flex flex-col items-center justify-center lg:mt-0 mt-5'>
                             <h3 className='lg:text-3xl text-2xl font-semibold text-center'>Channel
                                 Package</h3>
 
@@ -357,7 +362,7 @@ export default function Home() {
                                     Billed vearlv
                                 </li>
                                 <li>
-                                    Pav with $A|Doge
+                                    Pav with $DogeGPT
                                 </li>
                             </ul>
 
@@ -366,7 +371,7 @@ export default function Home() {
                             </button>
                         </div>
 
-                        <div className='bg_3 p-5 font-inter flex flex-col items-center justify-center mt-12'>
+                        <div className='bg_3 p-5 font-inter flex flex-col items-center justify-center lg:mt-0 mt-5'>
                             <h3 className='lg:text-3xl text-2xl font-semibold text-center'>Group
                                 Package</h3>
 
@@ -381,7 +386,7 @@ export default function Home() {
                                     Billed yearly
                                 </li>
                                 <li>
-                                    Pay with $AlDoge
+                                    Pay with $DogeGPT
                                 </li>
                             </ul>
 
@@ -400,7 +405,7 @@ export default function Home() {
                         <p className="py-5 font-inter">
                             <Typed
                                 strings={[
-                                    'It will cost you to upgrade the bot, develop the bot or promote on our bot, all paid in $AIDoge token. 50% of tokens paid from buyers will be airdropped to all holders, the remaining 50% we will use for future development. However, it is not ruled out that we will burn it.'
+                                    'It will cost you to upgrade the bot, develop the bot or promote on our bot, all paid in $DogeGPT token. 50% of tokens paid from buyers will be airdropped to all holders, the remaining 50% we will use for future development. However, it is not ruled out that we will burn it.'
                                 ]}
                                 typeSpeed={40}
                                 cursorChar={''}
@@ -430,17 +435,19 @@ export default function Home() {
                             Contract Address:
                         </p>
 
-                        <button className="border-2 border-white-100 px-5 py-2 rounded-full hover:bg-pink-100">
+                        <button onClick={() => copyToClipBoard('0xd1b8894E05F336f8dA2F7a594DC48e890038d341')} className="border-2 border-white-100 px-5 py-2 rounded-full hover:bg-pink-100">
                             Click to copy
                         </button>
+                        <span className="text-white-100 -ml-24 mt-12 absolute duration-300">
+                            {copySuccess}
+                        </span>
                     </div>
 
                     <div className="grid lg:grid-cols-3 sm:grid-cols-1 justify-between items-center gap-12 mt-20">
 
-
                         <div className='border-2 border-pink-100 p-5 font-inter'>
 
-                            <h3 className='text-xl font-semibold pt-5'>Developement - 2%</h3>
+                            <h3 className='text-xl font-semibold pt-5'>Development - 1%</h3>
 
                             <p className="py-6">
                                 <Typed
@@ -457,12 +464,12 @@ export default function Home() {
 
                         <div className='border-2 border-pink-100 p-5 font-inter'>
 
-                            <h3 className='text-xl font-semibold pt-5'>Marketing - 2%</h3>
+                            <h3 className='text-xl font-semibold pt-5'>Marketing - 1%</h3>
 
                             <p className="py-6">
                                 <Typed
                                     strings={[
-                                        'Gives our community exposure and helps us to grow'
+                                        'Gives our community exposure and helps us to grow.'
                                     ]}
                                     typeSpeed={40}
                                     cursorChar={''}
@@ -504,6 +511,7 @@ export default function Home() {
                     </h2>
 
                     <Slider />
+
 
                 </div>
 

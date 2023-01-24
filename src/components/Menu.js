@@ -54,7 +54,7 @@ export default function Menu() {
 
       <div className="lg:flex hidden items-center justify-between font-inter text-white-100 h-20">
         <a href="/" className="logo">
-          <h2 class="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
+          <h2 className="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
         </a>
 
         <div className="flex items-center gap-3">
@@ -74,11 +74,11 @@ export default function Menu() {
         <div className="pb-8">
           <div className="mt-1 flex items-center justify-between">
             <a href="/" className="logo">
-              <h2 class="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
+              <h2 className="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
             </a>
 
             <button onClick={() => setShow(!show)}>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white-100">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10 text-white-100">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
 
@@ -110,7 +110,7 @@ export default function Menu() {
 
       <div className={`lg:hidden flex items-center justify-between pt-5 px-5 sticky ${visible ? 'block' : 'hidden'}`}>
         <a href="/" className="logo">
-          <h2 class="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
+          <h2 className="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
         </a>
 
         <button>
@@ -120,7 +120,7 @@ export default function Menu() {
 
       <div className={`lg:hidden flex items-center justify-between fixed w-full z-20 top-0 px-5 bg-blue-50 py-3 ${notVisible ? 'hidden' : 'block'}`}>
         <a href="/" className="logo">
-          <h2 class="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
+          <h2 className="uppercase text-2xl font-coolvetica font-semibold">AI DOGE</h2>
         </a>
 
         <button onClick={() => setShow(!show)}>
