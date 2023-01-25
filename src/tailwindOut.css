@@ -695,6 +695,9 @@ video {
 .pt-28{
   padding-top: 7rem;
 }
+.pb-5{
+  padding-bottom: 1.25rem;
+}
 .pr-2{
   padding-right: 0.5rem;
 }
@@ -789,10 +792,6 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-  .md\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -872,10 +871,6 @@ video {
   }
   .lg\:pt-0{
     padding-top: 0px;
-  }
-  .lg\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
   .lg\:text-3xl{
     font-size: 1.875rem;

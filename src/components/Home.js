@@ -46,7 +46,7 @@ export default function Home() {
                     <Menu />
                     <div className="lg:flex block justify-between gap-12 items-center pt-28">
                         <div className="text-white-100 lg:w-1/2 w-full">
-                            <h2 className='md:text-6xl text-3xl font-coolvetica font-bold text-black-100'>
+                            <h2 className='md:text-4xl text-3xl font-coolvetica font-bold text-black-100 pb-5'>
                                 <Typed
                                     strings={[
                                         'Ai Doge free to use, cross platform artificial intelligence that is here to stay'
@@ -56,6 +56,16 @@ export default function Home() {
 
                                 />
                             </h2>
+                            <a href='https://twitter.com/elonmusk/status/1617386342224101377' className='md:text-4xl text-3xl font-coolvetica font-bold text-black-100'>
+                                <Typed
+                                    strings={[
+                                        'Elon Musk Big Year Of Artificial Intelligence'
+                                    ]}
+                                    typeSpeed={40}
+                                    cursorChar={''}
+
+                                />
+                            </a>
                         </div>
 
                         <img src={doge} alt="" className='doge lg:w-1/3 w-full -mt-6' />
@@ -75,13 +85,12 @@ export default function Home() {
 
                     <div className="text-white-100 flex flex-col items-center lg:py-20 py-8">
 
-                        <h2 className='lg:text-5xl text-3xl font-coolvetica font-bold px-5'>
-                            Free to use, cross
-
-                            platform artificial
-
-                            intelligence that is here to stay
+                        <h2 className='text-3xl font-coolvetica font-bold px-5'>
+                            Ai Doge free to use, cross platform artificial intelligence that is here to stay
                         </h2>
+                        <a href='https://twitter.com/elonmusk/status/1617386342224101377' className='text-3xl font-coolvetica font-bold px-5'>
+                        Elon Musk Big Year Of Artificial Intelligence
+                        </a>
 
                     </div>
                 </div>
