@@ -15,6 +15,7 @@ import hand from '../assets/hand.png';
 import side_1 from '../assets/side-1.png';
 import side from '../assets/side.png';
 import doge from '../assets/doge.png';
+import elon from '../assets/elon.png';
 import Typed from "react-typed"
 import Slider from './Slider';
 
@@ -56,16 +57,6 @@ export default function Home() {
 
                                 />
                             </h2>
-                            <a href='https://twitter.com/elonmusk/status/1617386342224101377' className='md:text-4xl text-3xl font-coolvetica font-bold text-black-100'>
-                                <Typed
-                                    strings={[
-                                        'Elon Musk Big Year Of Artificial Intelligence'
-                                    ]}
-                                    typeSpeed={40}
-                                    cursorChar={''}
-
-                                />
-                            </a>
                         </div>
 
                         <img src={doge} alt="" className='doge lg:w-1/3 w-full -mt-6' />
@@ -88,19 +79,52 @@ export default function Home() {
                         <h2 className='text-3xl font-coolvetica font-bold px-5'>
                             Ai Doge free to use, cross platform artificial intelligence that is here to stay
                         </h2>
-                        <a href='https://twitter.com/elonmusk/status/1617386342224101377' className='text-3xl font-coolvetica font-bold px-5'>
-                        Elon Musk Big Year Of Artificial Intelligence
-                        </a>
 
                     </div>
                 </div>
 
             </div>
 
+            {/* elon section */}
+
+            <div id='project' className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
+                <div className="lg:flex items-center justify-between">
+                    <div className="text-white-100 lg:w-5/12 w-full lg:mt-0 mt-8">
+                        <h2 className='md:text-4xl text-2xl font-coolvetica font-bold text-black-100'>
+
+                            <Typed
+                                strings={[
+                                    'Its a big year for AI'
+                                ]}
+                                typeSpeed={40}
+                                cursorChar={''}
+
+                            />
+                        </h2>
+
+                        <p className="py-6 font-inter">
+
+                            <Typed
+                                strings={[
+                                    'After success of ChatGPT and other success of Artificial intelligence. Elon Musk is also supporting it and accepting the fact that it\'s big break for AI.'
+                                ]}
+                                typeSpeed={40}
+                                cursorChar={''}
+
+                            />
+                        </p>
+                    </div>
+
+                    <a href='https://twitter.com/elonmusk/status/1617386342224101377' className="lg:w-5/12 w-full">
+                        <img src={elon} alt="" className='' />
+                    </a>
+                </div>
+            </div>
+
 
             {/* projects-section */}
 
-            <div id='project' className="">
+            <div className="">
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
                     <div className="lg:flex items-center justify-between">
