@@ -19,6 +19,9 @@ export default function Footer() {
         <a href="https://twitter.com/AIDogeBsc" className='md:text-xl text-medium hover:text-pink-100 font-semibold'>
           Twitter
         </a>
+        <a href="mailto:support@aidogebsc.com" className='md:text-xl text-medium hover:text-pink-100 font-semibold'>
+          Email
+        </a>
       </div>
 
     </footer>

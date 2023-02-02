@@ -251,7 +251,7 @@ export default function Home() {
                         <div className='border-2 border-pink-100 p-5 font-inter'>
                             <div className="flex items-center justify-between gap-6">
                                 <img src={rocket} alt="" />
-                                <h3 className='text-xl font-semibold'>Mass
+                                <h3 className='text-lg font-semibold'>Mass
                                     Exposure</h3>
                             </div>
 
@@ -271,7 +271,7 @@ export default function Home() {
                         <div className='border-2 border-pink-100 p-5 font-inter'>
                             <div className="flex items-center justify-between gap-6">
                                 <img src={shield} alt="" />
-                                <h3 className='text-xl font-semibold'>Safety</h3>
+                                <h3 className='text-lg font-semibold'>Safety</h3>
                             </div>
 
                             <p className="py-6">
@@ -290,7 +290,7 @@ export default function Home() {
                         <div className='border-2 border-pink-100 p-5 font-inter'>
                             <div className="flex items-center justify-between gap-6">
                                 <img src={ai} alt="" />
-                                <h3 className='text-xl font-semibold'>In House Development</h3>
+                                <h3 className='text-lg font-semibold'>In House Development</h3>
                             </div>
 
                             <p className="py-6">
@@ -309,7 +309,7 @@ export default function Home() {
                         <div className='border-2 border-pink-100 p-5 font-inter'>
                             <div className="flex items-center justify-between gap-6">
                                 <img src={bulb} alt="" />
-                                <h3 className='text-xl font-semibold'>Experienced Team</h3>
+                                <h3 className='text-lg font-semibold'>Experienced Team</h3>
                             </div>
 
                             <p className="py-6">
